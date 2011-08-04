@@ -142,7 +142,8 @@ public:
         lightnode->AddComponent(new dt::LightComponent("light"));
         
         // add music
-        mMusic = new dt::MusicComponent("12-6-2010-1446.mp3", "music");
+        mMusic = new dt::MusicComponent("12-6-2010-1446.ogg", "music");
+        mMusic->PlayMusic();
 
         // generate meshes
         OgreProcedural::BoxGenerator().setSizeX(FIELD_WIDTH + 1).setSizeY(FIELD_HEIGHT).setSizeZ(1.f).realizeMesh("Field");
